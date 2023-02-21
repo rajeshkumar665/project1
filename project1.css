@@ -1,0 +1,69 @@
+*{
+    background-color: black;
+    color: white;
+}
+.nav a{
+    border: 1px solid white;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 1s;
+
+}
+.nav{
+    display: grid;
+    gap: 10%;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+
+}
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-list,li a{
+    text-decoration: none;
+}
+.footer-list,li a:hover{
+    color: red;
+}
+.comp-logo{
+    display: grid;
+    gap: 50px 50px;
+    grid-template-columns:repeat(3,1fr);
+}
+.comp-logo img{
+    border: 1px solid white;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+    
+}
+.comp-logo img:hover{
+    width: 250px;
+    height: 250px;
+}
+@media only screen and (max-width: 600px){
+    .nav,.comp-logo,.footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.mail{
+    color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    
+     animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes example {
+    from {left: 0px;}
+    to {left: 1150px;}
+}   
